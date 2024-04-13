@@ -1,0 +1,49 @@
+{
+  "name": "mrsatik/language",
+  "description": "Translator tool",
+  "minimum-stability": "stable",
+  "keywords": [
+    "Translator",
+    "Translation",
+    "tool"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Perchenok Alexey",
+      "email": "a.perchenok@corp.mail.ru"
+    }
+  ],
+  "repositories": [
+    {
+        "type": "composer",
+        "url": "http://esports.composer.pvt"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "mrsatik/settings": "^1.2",
+    "mrsatik/tag-cache": "^1.2",
+    "symfony/translation": "^2.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.4",
+    "mrsatik/cs": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "mrsatik\\Language\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "mrsatik\\LanguageTest\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit"
+    ]
+  }
+}
